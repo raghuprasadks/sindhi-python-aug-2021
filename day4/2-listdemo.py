@@ -33,7 +33,6 @@ kerala=["Kerala",200000,30000,140000,30000]
 coronadashboard.append(title)
 coronadashboard.append(karnataka)
 coronadashboard.append(kerala)
-
 print("corona dashboard ",coronadashboard)
 
 
