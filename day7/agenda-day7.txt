@@ -1,3 +1,16 @@
 Agenda - day 7
 
 Object oriented programming
+
+class - template or blue print
+drawing - class
+101 - object
+102 - object
+
+class
+
+ 
+object
+inheritance
+polymorphism
+
