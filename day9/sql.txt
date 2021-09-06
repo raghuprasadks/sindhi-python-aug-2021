@@ -1,0 +1,81 @@
+Database with python
+
+
+RDBMS - Relational Database Management System
+
+oracle,db2,ms-sql
+
+mysql,postgres, sqlite
+
+table -
+
+primary key and foreign key
+columns
+rows 
+
+SQL - Structured Query Language
+
+step 1 - download dbbrowser for sqlite
+https://sqlitebrowser.org/dl/
+3rd link - DB Browser for SQLite - Standard installer for 64-bit Windows
+
+download and install
+
+step 2:
+type dbbrowser in windows search
+click on new database
+
+step3 : select a folder - day9
+give name as ecommerce
+
+step 4 - create a table customer
+CREATE TABLE "customer" (
+	"id"	INTEGER NOT NULL,
+	"name"	TEXT NOT NULL,
+	"email"	TEXT NOT NULL,
+	"mobile"	INTEGER NOT NULL,
+	"location"	TEXT,
+	"zipcode"	INTEGER,
+	PRIMARY KEY("id")
+);
+step 5 -  insertion
+insert into customer values (1,'raghu','prasadraghuks@gmail.com',9845547471,'bengaluru',560077)
+step 6 - read
+select * from customer
+step 7 - update
+update customer set name='raghu prasad' where id=1
+step 8 - delete a record
+delete from customer where id=1
+
+2. table 
+corona
+statename,total,active,cured,death
+3. Insert data for 5 states in india ( south states)
+4. Write sql statement to display records of karnataka
+
+CREATE TABLE "corona" (
+	"name"	TEXT,
+	"total"	INTEGER NOT NULL,
+	"active"	INTEGER NOT NULL,
+	"cured"	INTEGER NOT NULL,
+	"death"	INTEGER NOT NULL,
+	PRIMARY KEY("name")
+);
+insert into corona values ('karnataka',100000,10000,80000,10000);
+insert into corona values ('andhra',200000,20000,160000,20000);
+insert into corona values ('telangana',300000,30000,260000,10000);
+insert into corona values ('kerala',400000,40000,340000,20000);
+
+select * from corona;
+select * from corona where name='karnataka';
+select * from corona where name in ('karnataka','telangana');
+select name,total from corona;
+select * from corona where total > 100000;
+select name,max(total) from corona;
+select name,min(total) from corona;
+select sum(total) from corona;
+
+
+
+
+
